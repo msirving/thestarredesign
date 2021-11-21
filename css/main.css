@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #646363;
+}
+/*Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: #d90000;
+    align-content: center;
+}
+/* icons*/
+.icons{
+    width: 20%;
+    align-content: flex-start, row;
+    overflow: auto;
+  }
+/*icons hover effect*/
+.icons a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+  
+.icons a:hover {
+    background: rgb(240, 236, 236);
+    color: #4e4c4c;
+}
+.search {
+        border: 1px solid grey;
+        border-radius: 5px;
+        height: 30px;
+        width: 20%;
+        padding: 2px 23px 2px 30px;
+        outline: 0;
+        background-color: white;
+  }
+  /*nav bar*/
+.nav-container{
+    display: flex;
+    list-style: none;
+     background-color: #d90000;
+     width: 100%;
+     height: 71px;
+     justify-content: space-evenly;
+}
+/*nav bar hover effect*/
+.nav-container ul a{
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 5%;
+    font-weight: 500;
+    padding:  8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.nav-container ul a:hover{
+    background: rgb(240, 236, 236);
+    color: #4e4c4c;
+}
+.nav-container > ul{
+    padding-right: 10px;
+    align-content: center;
+    justify-content: space-around; 
+    padding-top: 20px; 
+}
+/*Latest News section*/
+.lastestnews > h1{
+    font-size: 50px;
+    padding: 10px 20px 20px 20px;
+}
+.lastestnews{
+    padding: 20px 10px;
+    background-color: white;
+    color: #646363;
+}
+.lastestnews p{
+    line-height: 1.5; 
+}
+.news{
+    text-align:center;
+    padding:10px;
+}
+.news-grid   
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0;
+    column-gap: 0;
+    padding: 10px 10px;
+}
+.news img{
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+.main-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+.main-news img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.maintext{
+    font-size: 70px;
+}
+.news-grid > div > p{
+    font-size: 20px;
+    font-weight: 400;
+}
+/*Entertainment, Sports, Lifestyle Section*/
+.secondarysectiongrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding:0px;
+}
+.secondarysectiongrid img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.entertainment, .lifestyle1, .sports > div > p{
+    font-size: 20px;
+}
+.secondaryheading{
+    display: flex;
+    list-style: none;
+     background-color: #d90000;
+     width: 100%;
+     height: 100px;
+     align-items: center;
+     justify-content: space-around;
+     padding-bottom: 20px;
+     margin-bottom: 20px;
+}
+.secondaryheading > li > a{
+    width: 100px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    padding:  8px 15px;
+}
+/*Tell Me Pastor*/
+.pastor{
+    background-color: #d90000;
+    display: flex;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.pastor h2{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.cheater{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+.cheater img{
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+}
+.cheater > p{
+    font-size: 70px;
+}
+.tellme{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.tellme > div > p{
+    font-size: 20px;
+    font-weight: 400;
+}
+/*Footer*/
+.footer{
+    height: 100%;
+    width: 100%;
+    background-color: #ff0000;
+}
+.inner-footer{
+    display: flex;
+    line-height: 30px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding-top: 5px;
+    color: white;
+}
+.footerlogo{
+    float: inline-start;
+    height: 100%;
+}
+.trademark{
+    font-size: 16px;
+    color: white;
+}
+.footer-link a{
+    color: white;
+}
+.footer-list li{
+    list-style-type: none;
+}
