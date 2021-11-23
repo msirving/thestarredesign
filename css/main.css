@@ -5,47 +5,52 @@
     text-decoration: none;
 }
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Helvetica", sans-serif;
     color: #646363;
 }
 /*Header */
 .header-container {
     display: flex;
-    justify-content: space-between;
-    padding-right: 50px;
-    height: 100%;
+    justify-content: flex-end;
     width: 100%;
     background-color: #d90000;
-    align-content: center;
+    padding: 10px 10px 10px 0px;
 }
 /* icons*/
 .icons{
-    width: 20%;
-    align-content: flex-start, row;
-    overflow: auto;
+    align-content: center;
+    justify-content: flex-end;
   }
+
+.logo 
+{
+    background-color: #d90000;
+    padding: 0px 20px;
+}
 /*icons hover effect*/
-.icons a {
-    float: left;
-    width: 20%;
-    text-align: center;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
+.icons li{
+ 
+    font-size: 30px;
+   display: inline-block;
+   justify-content: space-between;
+    padding: 0px 10px 0px 0px;
+}
+
+.icons li a{
+    color: #232323;
 }
   
 .icons a:hover {
-    background: rgb(240, 236, 236);
-    color: #4e4c4c;
+   color: white;
 }
 .search {
         border: 1px solid grey;
         border-radius: 5px;
-        height: 30px;
         width: 20%;
         padding: 2px 23px 2px 30px;
-        outline: 0;
+        outline: none;
         background-color: white;
+        
   }
   /*nav bar*/
 .nav-container{
@@ -109,22 +114,71 @@ body{
     height: 60%;
     object-fit: contain;
 }
+
+.news p{
+    color: #232323;
+    font-weight: 900;
+}
+
+.main-news-story
+{
+    padding: 10px 40px;
+}
 .main-news{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-heading
+{
+    font-size: 30px;
+    color: #232323;
+}
+.news-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    color: #232323;
+
 }
 .main-news img{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+
 }
-.maintext{
-    font-size: 70px;
+
+.read-more-btn:link, .read-more-btn:visited
+
+{
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
 }
+
 .news-grid > div > p{
     font-size: 20px;
     font-weight: 400;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.headline-container div:nth-child(3){
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.headline-container div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*Entertainment, Sports, Lifestyle Section*/
 .secondarysectiongrid{
@@ -132,62 +186,126 @@ body{
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 10px;
-    padding:0px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 .secondarysectiongrid img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
+.entertainment , .sports, .lifestyle1{
+    padding: 20px 40px;
+
+}
 .entertainment, .lifestyle1, .sports > div > p{
     font-size: 20px;
+    color: #232323;
 }
-.secondaryheading{
-    display: flex;
-    list-style: none;
-     background-color: #d90000;
-     width: 100%;
-     height: 100px;
-     align-items: center;
-     justify-content: space-around;
-     padding-bottom: 20px;
-     margin-bottom: 20px;
-}
-.secondaryheading > li > a{
-    width: 100px;
-    margin: 0;
+
+.headline-container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 500;
-    padding:  8px 15px;
+
 }
-/*Tell Me Pastor*/
-.pastor{
+
+.secondaryheading
+{
     background-color: #d90000;
+}
+
+.headline-container li{
+    list-style: none;
+}
+.headlines{
+    font-size: 50px;
+    color: white;
+
+}
+
+.skillibeng, .fambo,.christopher,.lifestyle, .tapper,.schoolboy,.windies
+{
     display: flex;
-    height: 100px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+}
+
+/*Tell Me Pastor*/
+
+.pastor-container{
+    padding: 20px 40px;
+    background-color: #d90000;
+}
+.pastor{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    
+}
+
+.pastor img{
+    width: 150px;
+}
+
+.tmplogo
+{
+    border-radius: 50%;
 }
 .pastor h2{
     font-size: 50px;
     text-align: center;
     color: white;
 }
+.cheater-container
+{
+    padding: 40px 40px;
+}
 .cheater{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
+    justify-content: center;
+    gap: 20px;
 }
+
+.article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    color: #232323;
+}
+    
 .cheater img{
-    width: 95%;
-    height: 95%;
-    object-fit: contain;
+    width: 100%;
 }
-.cheater > p{
-    font-size: 70px;
+
+.notes, .pregnant
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    color: #232323;
 }
+
+.pregnant img, .notes img
+{
+    width: 250px;
+    height: 250px;
+}
+
 .tellme{
     display: flex;
     flex-direction: row;
@@ -216,8 +334,13 @@ body{
     height: 100%;
 }
 .trademark{
+    margin-top: 20px;
     font-size: 16px;
     color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Helvetica", sans-serif;
 }
 .footer-link a{
     color: white;
