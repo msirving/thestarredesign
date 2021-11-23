@@ -6,7 +6,7 @@
 }
 body{
     font-family: "Helvetica", sans-serif;
-    color: #646363;
+    color: #232323;
 }
 /*Header */
 .header-container {
@@ -92,7 +92,7 @@ body{
 .lastestnews{
     padding: 20px 10px;
     background-color: white;
-    color: #646363;
+    color: #232323;
 }
 .lastestnews p{
     line-height: 1.5; 
